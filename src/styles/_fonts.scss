@@ -1,0 +1,46 @@
+$font_path: 'fonts/';
+@font-face {
+    font-family: "Montserrat";
+    src: url($font_path+"Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Raleway bold";
+    src: url($font_path+'Raleway-Bold.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "Raleway Semibold";
+    src: url($font_path+'Raleway-SemiBold.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "Raleway medium";
+    src: url($font_path+'Raleway-Medium.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url($font_path+'Raleway-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "Raleway Light";
+    src: url($font_path+'Raleway-Light.ttf') format("truetype");
+}
+
+//calaminon fonts
+@font-face {
+    font-family: "Roboto";
+    src: url($font_path+"Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto bold";
+    src: url($font_path+'Roboto-Bold.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto black";
+    src: url($font_path+'Roboto-Black.ttf') format("truetype");
+}
