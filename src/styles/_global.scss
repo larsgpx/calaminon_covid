@@ -49,6 +49,14 @@ p {
     text-transform: uppercase;
 }
 
+@media screen and (min-width:601px) {
+    .close {
+        position: relative;
+        right: -44px;
+        top: 10px;
+    }
+}
+
 #services {
     padding: 3rem 0;
     border: 1px solid black;
@@ -80,24 +88,54 @@ p {
     }
 }
 
-input,
-textarea {
+.form-group {
+    margin-bottom: .4rem;
+    label {
+        margin-bottom: 0;
+        margin-left: 5px;
+        color: $blue_dark!important;
+    }
+}
+
+.distritos {
+    @media screen and (min-width: 600px) {
+        width: 108%;
+        margin-left: -15px;
+    }
+}
+
+input {
     &.form-control {
-        border-radius: 0;
+        border-radius: 30px;
         box-shadow: inherit;
-        font-family: "barlow semibold italic";
-        color: black;
+        font-family: "roboto";
+        color: $blue_dark;
         &::placeholder {
-            color: black;
-            text-transform: uppercase;
+            color: $blue_dark;
+            opacity: 0.8;
+            text-transform: capitalize;
         }
     }
     &:focus {
-        background-color: $green!important;
-        border: 0!important;
-        color: white!important;
+        box-shadow: inherit!important;
+        border-color: $blue_light!important;
+    }
+}
+
+textarea {
+    &.form-control {
+        border-radius: 15px;
+        box-shadow: inherit;
+        font-family: "roboto";
+        color: $blue_dark;
         &::placeholder {
-            color: white!important;
+            color: $blue_dark;
+            opacity: 0.5;
+            text-transform: capitalize;
         }
+    }
+    &:focus {
+        box-shadow: inherit!important;
+        border-color: $blue_light!important;
     }
 }

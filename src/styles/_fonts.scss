@@ -44,3 +44,8 @@ $font_path: 'fonts/';
     font-family: "Roboto black";
     src: url($font_path+'Roboto-Black.ttf') format("truetype");
 }
+
+@font-face {
+    font-family: "Roboto medium";
+    src: url($font_path+'Roboto-Medium.ttf') format("truetype");
+}

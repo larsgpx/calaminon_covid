@@ -11,22 +11,38 @@ header.masthead {
         li {
             width: 12px;
             height: 12px;
-            border: 3px solid $blue_dark!important;
-            background-color: transparent;
+            border: 2px solid white!important;
+            background-color: $blue_dark;
             border-radius: 100%;
+            opacity: 1!important;
+            background-clip: inherit;
             &.active {
-                border: 3px solid $blue_light!important;
+                border: 2px solid white!important;
+                background-color: $blue_light;
             }
         }
     }
     .carousel-inner {
         height: 600px;
+        @media screen and (min-width: 901px) and (max-width: 1025px) {
+            height: 355px;
+        }
+        @media screen and (min-width: 601px) and (max-width:900px) {
+            height: 355px;
+        }
+        @media screen and (max-width: 600px) {
+            height: 355px;
+        }
         .caption-content {
             width: 100%;
             max-width: 1200px;
             left: 5%;
             bottom: 50px;
             top: 50px;
+            @media screen and (max-width: 600px) {
+                max-width: 100%;
+                left: 0;
+            }
             .blur_blue {
                 position: absolute;
                 top: 15px;
@@ -69,6 +85,35 @@ header.masthead {
                         &:focus,
                         &:active {
                             text-decoration: none;
+                        }
+                    }
+                }
+                @media screen and (min-width: 601px) and (max-width:900px) {
+                    width: 450px;
+                    top: -25px;
+                    h2 {
+                        font-size: 1.2rem;
+                    }
+                }
+                @media screen and (max-width:600px) {
+                    width: 100%;
+                    padding: 20px 0px;
+                    top: -40px;
+                    left: 0px;
+                    h2 {
+                        font-size: 1rem;
+                        text-align: center;
+                    }
+                    .white_border {
+                        width: 235px;
+                        margin: 0 auto;
+                        margin-top: 25px;
+                        .cotizar-btn {
+                            padding: 9px 35px;
+                            width: 220px;
+                            img {
+                                width: 35px!important;
+                            }
                         }
                     }
                 }
@@ -165,6 +210,14 @@ header.masthead {
             font-size: 5rem;
         }
     }
+    @media screen and (min-width: 901px) and (max-width:1024px) {
+        height: 31vh;
+        min-height: inherit;
+    }
+    @media screen and (min-width: 601px) and (max-width:900px) {
+        height: 40vh;
+        min-height: inherit;
+    }
     @include media-breakpoint-up(xl) {
         .title_banner {
             font-size: 5rem;
@@ -177,5 +230,6 @@ header.masthead {
         margin-left: 0px;
         margin-right: 0px;
         padding: 0!important;
+        z-index: 10;
     }
 }
